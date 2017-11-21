@@ -46,15 +46,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="Website.html">Viraj Dave</a>
+          <a class="navbar-brand" href="index.html">Viraj Dave</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li ><a href="Website.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li><a href="About.html">About Me</a></li>
             <li class="active"><a href="Projects.html">Projects</a></li>
-              <li><a href="Work.html">Volunteer/Work Experience</a></li>
-              <li><a href="Resume/Viraj%20Dave%20-%20Resume.docx">Resume</a></li>
+              <li><a href="Work.html">Work Experience</a></li>
+              <li><a href="Volunteer.html">Volunteer Experience</a></li>
+              <li><a href="Resume/Viraj%20Dave%20-%20Resume.pdf">Resume</a></li>
             <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -91,15 +92,16 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="images/Java%201.jpg" alt="First slide">
+          <img class="first-slide" src="images/IMG_0157.JPG" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Washer Detector.</h1>
-              <p>Click here to find out more about my first coding project, an image detection program.</p>
-              <p><a class="btn btn-lg btn-primary" href="#Washer" role="button">Check out the Washer detector</a></p>
+              <h1>CAM Android Applcation.</h1>
+              <p>Check out my first Android application, and in conjuction with an IoT device.</p>
+              <p><a class="btn btn-lg btn-primary" href="#CAM" role="button">View CAM Project</a></p>
             </div>
           </div>
         </div>
@@ -111,6 +113,16 @@
               <h1>TFTP File System.</h1>
               <p>Find out more about this complex system, and how I contributed to the project.</p>
               <p><a class="btn btn-lg btn-primary" href="#TFTP" role="button">View the file transfer program</a></p>
+            </div>
+          </div>
+        </div>
+          <div class="item">
+          <img class="third-slide" src="images/Java%201.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Washer Detector.</h1>
+              <p>Click here to find out more about my first coding project, an image detection program.</p>
+              <p><a class="btn btn-lg btn-primary" href="#Washer" role="button">Check out the Washer detector</a></p>
             </div>
           </div>
         </div>
@@ -163,13 +175,21 @@
         <hr class="featurette-divider">
 
       <div class="row featurette">
-          <div id="TFTP">
+          <div id="CAM">
         <div class="col-md-7">
-          <h2 class="featurette-heading">TFTP File Transfer Program - Java. <span class="text-muted">May 2016 - June 2016.</span></h2>
-          <p class="lead">In a team of 5, we successfully developed and implemented a TFTP client/server program which is able to send a file from one computer/client to another, on the same network using the TFTP protocol. There was an error simulator which could delay, and block packets, as well as create packets which were incorrect. The system had to properly detect these flaws, and respond promptly to ensure the file was transmitted correctly. I was responsible to test every scenario which the different packets were changed so the system responded correctly.</p><p><a class="btn btn-lg btn-primary" href="https://github.com/virajdave/TFTP_Application" role="button">Code for TFTP Project</a></p>
+          <h2 class="featurette-heading">Computer Automated Morning (CAM) - Android. <span class="text-muted">May 2016 - June 2016.</span></h2>
+          <p class="lead">In a group of 4, we created and presented a IoT (Internet of Things) device to aide with one's morning activities. This is essentially a model of a house to control different activities. I was responsible for the Android Application for this model. It was an app that allowed the user to interact with the system and control the various components. The application communicated to a central server which would forward the new data to the server, which would send that data to the particular device. These activties included:
+            <ul>
+                <li>Setting an alarm to wake up.</li>
+                <li>Turn the lights on or off.</li>
+                <li>Set the temperature of the room.</li>
+                <li>Display local weather and the temperature of the room on magic mirror.</li>
+                <li>Display OCTranspo bus route times on magic mirror.</li>
+                <li>Change the colour of the mirror's text</li>
+            </ul></p><p><a class="btn btn-lg btn-primary" href="https://github.com/virajdave/SYSC-3010-F1" role="button">Code for the CAM Project</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="images/TFTP.gif">
+          <img class="featurette-image img-responsive center-block" src="images/cam.gif">
         </div>
         </div>
       </div>
@@ -177,15 +197,30 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-          <div id="Washer">
+          <div id="TFTP">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Washer Detection Program - Java. <span class="text-muted">October 2015 - November 2015.</span></h2>
-          <p class="lead">Along with 3 other team members, a photo detector was implemented in Java to detect whether a washer was broken or not, given a set of pictures. The program would get rid of the background of each image, then locate the washer. Since each washer was the same size, the program would draw a red circle to detect where the washer is. The findings were put in a seperate CSV file to see how many were good washers. The program ran with 75% accuracy. This was done in an 12 hour span, winning 2nd place at the Carleton Engineering Competition.</p><p><a class="btn btn-lg btn-primary" href="https://github.com/virajdave/CarletonIEEECompetition" role="button">Code for Washer program</a></p>
+          <h2 class="featurette-heading">TFTP File Transfer Program - Java.<span class="text-muted">October 2015 - November 2015.</span></h2>
+          <p class="lead">In a team of 5, we successfully developed and implemented a TFTP client/server program which is able to send a file from one computer/client to another, on the same network using the TFTP protocol. There was an error simulator which could delay, and block packets, as well as create packets which were incorrect. The system had to properly detect these flaws, and respond promptly to ensure the file was transmitted correctly. I was responsible to test every scenario which the different packets were changed so the system responded correctly.</p><p><a class="btn btn-lg btn-primary" href="https://github.com/virajdave/TFTP_Application" role="button">Code for the TFTP program</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="images/Washer.gif">
+          <img class="featurette-image img-responsive center-block" src="images/TFTP.gif">
         </div>
           </div>
+      </div>
+
+      <hr class="featurette-divider">
+        
+        <div class="row featurette">
+          <div id="Washer">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Washer Detection Program - Java.<span class="text-muted">January 2017 - April 2017.</span></h2>
+          <p class="lead">Along with 3 other team members, a photo detector was implemented in Java to detect whether a washer was broken or not, given a set of pictures. The program would get rid of the background of each image, then locate the washer. Since each washer was the same size, the program would draw a red circle to detect where the washer is. The findings were put in a seperate CSV file to see how many were good washers. The program ran with 75% accuracy. This was done in an 12 hour span, winning 2nd place at the Carleton Engineering Competition.
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/virajdave/CarletonIEEECompetition" role="button">Code for the Washer Project</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/Washer.gif">
+        </div>
+        </div>
       </div>
 
       <hr class="featurette-divider">
